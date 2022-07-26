@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all .3s ease-out;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main-card {
+  position: relative;
+  display: flex;
+  width: 920px;
+  background: #fff;
+  border-radius: 23px;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  overflow: hidden;
+}
+
+.main-card-image {
+  width: 100%;
+  z-index: 1; 
+}
+
+.main-card-image > img {
+  position: absolute;
+}
+
+.img-bottom {
+  left: -65%;
+  bottom: -30%;
+}
+
+.img-middle {
+  left: -10%;
+  bottom: 20%;
+}
+
+.img-top{
+  left: -10%;
+  bottom: 35%;
+}
+
+.main-card-mobile-img {
+  display: none;
+}
+
+.main-card-content {
+  padding: 65px 95px 83px 87px;
+  width: 100%;
+  margin-left: auto;
+  z-index: 2; 
+
+}
+
+.main-card-content-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1E1F36; 
+}
+
+.main-card-content-list {
+  list-style: none;
+  padding: 0; 
+}
+
+.main-card-content-list-item {
+  border-bottom: 1px solid #E8E8EA;
+  transition: color 0.3s ease-out; 
+}
+
+.main-card-content-list-item.active .arrow {
+  transform: rotate(-180deg);
+}
+
+.main-card-content-list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  color: #4B4C5F;
+  font-weight: 400;
+}
+
+.main-card-content-list-title:hover {
+  color: #F47B56;
+  cursor: pointer; 
+}
+
+.main-card-content-list-desc {
+  font-size: 12px;
+  height: 0;
+  overflow: hidden;
+}
+
+.main-card-content-list-title h3 {
+  font-size: .875rem;
+}
+
+.main-card-content-list-item.active .main-card-content-list-title h3 {
+  color: #1E1F36; 
+  font-weight: 700;
+}
+
+.main-card-content-list-item.active .main-card-content-list-desc {
+  height: 50px;
+  opacity: 1;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 1024px) {
+  
+.main-card {
+  width: 327px;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.main-card-image {
+  display: none;
+}
+
+.main-card-content {
+  padding: 28px 24px 48px;
+}
+
+.main-card-content-title {
+  text-align: center;
+}
+
+.main-card-content-list-title {
+  padding: 18px 0;
+}
+
+.main-card-content-list-title h3 {
+  font-size:  13px;
+}
+
+.main-card-mobile-img {
+  position: relative;
+  display: block;
+  width: 80%;
+  margin: -35% auto 0;
+}
+
+.mobile-pattern {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+}
+
+}
