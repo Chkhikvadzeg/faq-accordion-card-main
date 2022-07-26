@@ -31,23 +31,22 @@ body {
   z-index: 1; 
 }
 
-.main-card-image > img {
-  position: absolute;
-}
-
 .img-bottom {
+  position: absolute;
   left: -65%;
   bottom: -30%;
 }
 
 .img-middle {
+  position: absolute;
   left: -10%;
   bottom: 20%;
 }
 
 .img-top{
-  left: -10%;
-  bottom: 35%;
+  position: fixed;
+  z-index: 1000;
+  transform: translate(-50%, 80%);
 }
 
 .main-card-mobile-img {
